@@ -2,7 +2,7 @@ import React from 'react';
 //images 
 import Image from '../assets/el-tpr.png';
 //icons 
-import { FaGithub, FaYoutube, FaDribbble, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 //type animation 
 import { TypeAnimation } from 'react-type-animation';
 // motion 
@@ -87,10 +87,10 @@ const Banner = () => {
                   whileInView={'show'} 
                   viewport={{once: false, amount: 0.7 }} 
                   className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-                  <a href='https://www.linkedin.com/in/elisha-momoh-b23686211/' target="_blank"><FaLinkedin /></a>
-                  <a href='https://github.com/splendidel' target="_blank"><FaGithub /></a>
-                  <a href='https://www.instagram.com/elisha_splendid/' target="_blank"><FaInstagram /></a>
-                  <a href='https://twitter.com/elish_mh' target="_blank"><FaTwitter /></a> 
+                  <a href='https://www.linkedin.com/in/elisha-momoh-b23686211/' target="_blank" rel="noreferrer"><FaLinkedin /></a>
+                  <a href='https://github.com/splendidel' target="_blank" rel="noreferrer"><FaGithub /></a>
+                  <a href='https://www.instagram.com/elisha_splendid/' target="_blank" rel="noreferrer"><FaInstagram /></a>
+                  <a href='https://twitter.com/elish_mh' target="_blank" rel="noreferrer"><FaTwitter /></a> 
                 </motion.div>
             </div>
 

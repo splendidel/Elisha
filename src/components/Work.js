@@ -29,7 +29,7 @@ const Work = () => {
 
           <br/> Technoly Used: Tailwind | React | HTML/CSS | JS | WordPress
           </p>
-          <a href='https://wa.me/qr/AEQXLGDKEPADA1' target='_blank'><button className='btn btn-sm'>Let's Chat</button></a>
+          <a href='https://wa.me/qr/AEQXLGDKEPADA1' target="_blank" rel="noreferrer"><button className='btn btn-sm'>Let's Chat</button></a>
         </div>
 
         {/* image */}

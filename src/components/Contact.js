@@ -28,34 +28,29 @@ const Contact = () => {
         
         {/* form */}
         <motion.form 
+          name='contact' method='POST' data-netlify="true"
           variants={fadeIn('left', 0.3)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'
-          name='contact'
-          method='post' 
-          netlify>
+          className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
           <input 
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
             type='text' 
-            name='Name'
+            name='name'
             placeholder='Your name'
             required
             />
           <input 
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
             type='email' 
-            name='Email'
+            name='email'
             placeholder='Your email'
             required
             />
             <textarea 
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12' placeholder='Your message' name='Message' required></textarea>
-            <button
-              type="submit"
-              className='btn btn-lg'>Send message
-            </button>
+            <button type="submit" className='btn btn-lg'>Send message</button>
         </motion.form>
         </div>
       </div>
