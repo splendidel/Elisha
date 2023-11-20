@@ -18,13 +18,13 @@ const Banner = () => {
       <div className='container mx-auto'>
           <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
             {/** text */}
-            <div className='flex-1 text-center font-secondary lg:text-left'>
+            <div className='flex-1 text-center font-secondary lg:text-left lg:ml-28'>
               <motion.h1 
               variants={fadeIn('up', 0.3)} 
               initial='hidden' 
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
-              className='text-[45px] mt-10 font-bold leading-[0.8] lg:text-[80px]'>
+              className='text-[35px] mt-10 font-bold leading-[0.8] lg:text-[50px]'>
                 ELISHA <span>MOMOH</span>
               </motion.h1>
 
@@ -33,7 +33,7 @@ const Banner = () => {
               initial='hidden' 
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
-              className='mb-6 text-[26px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'>
+              className='mb-6 text-[20px] lg:text-[30px] font-secondary font-semibold uppercase leading-[1]'>
                 <span className='mr-4'>I am a</span>
                 <TypeAnimation sequence={[
                   'Front-end Developer',
@@ -55,7 +55,7 @@ const Banner = () => {
                   initial='hidden' 
                   whileInView={'show'} 
                   viewport={{once: false, amount: 0.7 }} 
-                  className='mb-8 max-w-lg mx-auto lg:mx-0 text-xl tracking-wide'
+                  className='mb-8 max-w-lg mx-auto lg:mx-0 text-sm tracking-wide'
                   >
                     I started off my career as a freelance graphics designer.
 
@@ -74,7 +74,7 @@ const Banner = () => {
                   viewport={{once: false, amount: 0.7 }}  
                   className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
                   <Link to='contact'>
-                  <button className='btn btn-lg'>Contact me</button>
+                  <button className='btn btn-sm'>Contact me</button>
                   </Link>
                   
                   <Link to='work' className='text-gradient btn-link cursor-pointer'> My Portfolio</Link>
@@ -99,7 +99,7 @@ const Banner = () => {
               variants={fadeIn('down', 0.5)} 
               initial='hidden' 
               whileInView={'show'}  
-              className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+              className='hidden lg:flex flex-1 max-w-[320px] lg:mr-28'>
               <img src={Image} alt='' />
           </motion.div>
         </div>

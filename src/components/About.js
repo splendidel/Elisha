@@ -26,7 +26,7 @@ const About = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1'> 
-          <img src={imageElisha} alt='' className='flex mix-blend-lighten'/>
+          <img src={imageElisha} alt='' className='flex w-80 mix-blend-lighten lg:ml-20 lg:w-96'/>
           </motion.div>
           {/*text*/}
           <motion.div 
@@ -34,7 +34,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'
+          className='flex-1 lg:ml-20'
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
@@ -58,8 +58,8 @@ const About = () => {
               </div> */}
 
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={100} duration={3} /> : 
+                <div className='text-[24px] font-tertiary text-gradient mb-2 lg:text-[32px]'>
+                  {inView ? <CountUp start={0} end={50} duration={3} /> : 
                   null}
                   +
                 </div>
@@ -70,8 +70,8 @@ const About = () => {
               </div>
 
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={99} duration={3} /> : 
+                <div className='text-[24px] font-tertiary text-gradient mb-2 lg:text-[32px]'>
+                  {inView ? <CountUp start={0} end={49} duration={3} /> : 
                   null}
                   +
                 </div>
@@ -83,7 +83,7 @@ const About = () => {
             </div>
             <div className='flex gap-x-8 items-center'>
             <Link to='contact'>
-            <button className='btn btn-lg'>Contact me</button>
+            <button className='btn btn-sm'>Contact me</button>
             </Link>
               
               <Link to='work' className='text-gradient btn-link cursor-pointer'>

@@ -12,7 +12,7 @@ const Work = () => {
   return(
   <section  className='section' id='work'>
   <div className='container mx-auto'>
-    <div className='flex flex-col lg:flex-row gap-x-10'>
+    <div className='flex flex-col lg:flex-row gap-x-20 lg:ml-28 lg:mr-28'>
       <motion.div 
       variants={fadeIn('right', 0.3)}
       initial='hidden'
@@ -24,7 +24,7 @@ const Work = () => {
           <h2 className='h2 leading-tight text-accent'>
             My Latest <br/> Work. 
           </h2>
-          <p className='max-w-sm mb-16 tracking-wider lg:max-w-lg'>Web design project - for 
+          <p className='max-w-sm mb-8 tracking-wider lg:max-w-lg'>Web design project - for 
           E.ultimate Tech, Pronium Solution, <br/> Ecoist Africa & more... 
 
           <br/> Technoly Used: Tailwind | React | HTML/CSS | JS | WordPress
@@ -58,7 +58,7 @@ const Work = () => {
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.3 }}
-      className='flex-1 flex flex-col gap-y-10'>
+      className='flex-1 flex flex-col gap-y-12'>
 
         {/* image */}
         <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -80,7 +80,7 @@ const Work = () => {
         </div>
         </div>
         {/* image */}
-        <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+        <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:mt-3'>
         {/* overlay */}
         <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
         {/* img */}
