@@ -29,7 +29,7 @@ const Contact = () => {
         {/* form */}
         <motion.form 
           name='contact' 
-          method='POST' 
+          method='post' 
           data-netlify="true"
           variants={fadeIn('left', 0.3)}
           initial='hidden'
@@ -40,7 +40,7 @@ const Contact = () => {
           
           <input 
             type='text' 
-            name='fname'
+            name='name'
             placeholder='Your name'
             required
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
@@ -55,7 +55,7 @@ const Contact = () => {
             />
 
             <textarea 
-            name='Message' 
+            name='message' 
             placeholder='Your message' 
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12' 
             required
